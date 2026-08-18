@@ -1,0 +1,9 @@
+parameters:
+    level: 8
+    # Symfony 6.4 and 8.x expose different generic precision for the same
+    # TreeBuilder runtime API; the explicit runtime guard remains authoritative.
+    treatPhpDocTypesAsCertain: false
+    paths:
+        - src
+        - tests
+    tmpDir: var/phpstan
